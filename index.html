@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="pizza.css">
+
+</head>
+<body id="page">
+
+<!-- Code For Tabs -->
+<div class="container">
+    <nav>
+        <ul id="tabs" class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#pizza">Pizza Order</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#delivery">Delivery Information</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#order">Order Confirmation</a>
+            </li>
+        </ul>
+    </nav>
+
+<div class="header">
+    <h1>Sierra's Pizza Shop</h1>
+    <p>Fresh Pizza Delivered Every Day</p>
+</div>
+
+<!-- Form For Pizza Details-->
+<div class="tab-content">
+
+    <div id="pizza" class="tab-pane active">
+
+    <form id="pizzaForm">
+
+    <h3>Build Your Pizza</h3>
+
+    <!-- Sizes -->
+
+        <h4>Pick A Size</h4>
+
+        <label for="small">Small</label>
+        <input type="radio" id="small" name="size" value="Small" checked="checked">
+        <br>
+
+        <label for="medium">Medium</label>
+        <input type="radio" id="medium" name="size" value="Medium">
+        <br>
+
+        <label for="large">Large</label>
+        <input type="radio" id="large" name="size" value="Large">
+        <br>
+
+
+    <!-- Crust -->
+
+
+        <h4>Pick A Crust</h4>
+
+        <label for="thin">Thin</label>
+        <input type="radio" id="thin" name="crust" value="Thin" checked="checked">
+        <br>
+
+        <label for="pan">Pan</label>
+        <input type="radio" id="pan" name="crust" value="Pan">
+        <br>
+
+        <label for="glutenFree">Gluten Free</label>
+        <input type="radio" id="glutenFree" name="crust" value="Gluten Free">
+        <br>
+
+
+
+    <!-- Meats -->
+
+
+
+        <h4>Pick Your Meat (Pick One)</h4>
+
+        <label for="pepperoni">Pepperoni</label>
+        <input type="checkbox" id="pepperoni" name="meat" value="Pepperoni">
+        <br>
+
+        <label for="sausage">Sausage</label>
+        <input type="checkbox" id="sausage" name="meat" value="Sausage">
+        <br>
+
+        <label for="ham">Ham</label>
+        <input type="checkbox" id="ham" name="meat" value="Ham">
+        <br>
+
+
+
+    <!-- Veggies -->
+
+
+        <h4>Pick Your Veggie (Pick One)</h4>
+
+        <label for="mushrooms">Mushrooms</label>
+        <input type="checkbox" id="mushrooms" name="veggies" value="Mushrooms" data-price="1.00">
+        <br>
+
+        <label for="olives">Olives</label>
+        <input type="checkbox" id="olives" name="veggies" value="Olives" data-price="1.00">
+        <br>
+
+        <label for="pepper">Green Bell Peppers</label>
+        <input type="checkbox" id="pepper" name="veggies" value="Green Bell Peppers" data-price="1.00">
+        <br>
+
+        <label for="jalapeno">Jalapenos</label>
+        <input type="checkbox" id="jalapeno" name="veggies" value="Jalapenos" data-price="1.00">
+        <br>
+
+        <label for="pineapple">Pineapple</label>
+        <input type="checkbox" id="pineapple" name="veggies" value="Pineapple" data-price="1.00">
+        <br>
+
+        <button type="submit" id="submit">Confirm Pizza</button>
+    </form>
+    </div>
+
+    <!-- Delivery Information -->
+    <div id="delivery" class="tab-pane">
+
+        <form>
+
+        <h3>Delivery Information</h3>
+
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="address">Your Address</label>
+        <input type="text" id="address" name="address" required>
+        <br><br>
+
+        <label for="phone">Your Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br><br><br>
+
+        <button type="submit" id="submit2">Submit Order</button>
+        <br><br>
+
+        </form>
+
+    </div>
+
+<!-- Order Confirmation -->
+
+    <div id="order" class="tab-pane">
+
+        <form id="orderForm">
+
+        <h3>Order Confirmation</h3>
+
+        <p><b>Your Pizza:</b></p>
+             <p id="pizzaOrder"></p>
+
+
+        <p><b>Your Information:</b></p>
+            <p id="namePara"></p>
+            <p id="addressPara"></p>
+            <p id="phonePara"></p>
+
+        <p><b>Subtotal:</b></p>
+            <p id="subtotal"></p>
+
+        <p><b>Tax:</b></p>
+            <p id="tax"></p>
+
+        <p><b>Delivery Fee: </b></p>
+            <p><i>$2.00</i></p>
+
+        <p><b>Total:</b></p>
+            <p id="total"></p>
+
+        </form>
+
+    </div>
+
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="pizza.js"></script>
+</body>
+
+
+</html>

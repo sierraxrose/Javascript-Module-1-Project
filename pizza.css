@@ -1,0 +1,66 @@
+body {
+    padding: 25px;
+    background-color: white;
+    text-align: center;
+    background-image: url("wood.jpg");
+
+}
+
+.nav-link {
+    color:white;
+}
+
+.tab-pane {
+    padding: 10px;
+}
+#pizza {
+    background-color: green;
+    color: white;
+}
+
+#delivery {
+    background-color: white;
+    color: black;
+}
+
+#order {
+    background-color: red;
+    color: white;
+}
+
+#pizzaOrder {
+    font-style: italic;
+}
+
+#subtotal {
+    font-style: italic;
+}
+
+#namePara {
+    font-style: italic;
+}
+
+#addressPara {
+    font-style: italic;
+}
+
+#phonePara {
+    font-style: italic;
+}
+
+#tax {
+    font-style: italic;
+}
+
+#total {
+    font-style: italic;
+}
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background-image: url("pizza.jpg");
+    font-size: 20px;
+    color: white;
+
+}
